@@ -1,0 +1,135 @@
+{
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "invoiceAmount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "dueDate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "documentHash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "invoiceNumber",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "riskScore",
+                    "type": "uint256"
+                }
+            ],
+            "name": "createInvoice",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getInvoiceDetails",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "msme",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "dueDate",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "documentHash",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "invoiceNumber",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isFinanced",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "bool",
+                    "name": "isSettled",
+                    "type": "bool"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "riskScore",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "totalSupply",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
